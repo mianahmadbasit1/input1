@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input & Output</title>
+</head>
+<body>
+    <!-- <button onclick="btn()">click Now</button> -->
+
+<form onsubmit="avg(); return false">
+<label for="tm">TM</label>
+<input type="number" id="tm" placeholder="Enter your Total Marks"> <br>
+<label for="tm">OM</label>
+<input type="number" id="om" placeholder="Enter your Obtain Marks"> <br>
+
+<button type="submit">Calculate</button>
+
+</form>
+
+<h1 id="res">Enter you Total Marks so we are show your result</h1>
+<p1 id="res1">Check your result in pargarph format</p1>
+<script>
+
+// function btn() {
+//     alert("hi web Developer")
+//     document.write("hi web Developer")
+// }
+
+function avg() {
+    let tm = document.querySelector("#tm").value
+    let om = document.querySelector("#om").value
+
+
+  result= om * 100 / tm
+ document.querySelector("#res").innerHTML = `you have got it ${result} % `//es5
+
+ document.querySelector("#res1").innerHTML = `you have got it ${result} %`//es5
+   
+
+
+
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
